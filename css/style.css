@@ -1,0 +1,408 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h2 {
+  font-family: 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+  font-size: 36.7px;
+  letter-spacing: 5px;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'seguibl';
+  font-size: 24.93px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 19px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.button_up {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 2px;
+  background-color: #e6362c;
+  background-image: url("../img/btn-up-arrov.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  margin: auto;
+  max-width: 1426px;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 6fr auto;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  width: 277px;
+}
+
+.phones {
+  background-image: url("../img/header-phone.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 40px;
+}
+.phones__title {
+  text-transform: uppercase;
+  font-size: 12.39px;
+  font-weight: normal;
+  color: #e6362c;
+}
+
+.phones__number  {
+  font-weight: bold;
+  display: block;
+  background-image: url("../img/chevron-down.png");
+  background-repeat: no-repeat;
+  background-position-x: 65%;
+  background-position-y: 60%;
+}
+
+.languages {
+  background-image: url("../img/chevron-down-red.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.languages a {
+  padding-left: 30px;
+}
+
+.languages__current--ua {
+  background-image: url("../img/flag-Ukrainian.png");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.languages__selector__item--en {
+  background-image: url("../img/flag-Ukrainian.png");
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.languages__selector__item--pl {
+  background-image: url("../img/flag-PL.png");
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.languages__selector__item--ru {
+  background-image: url("../img/flag-RU.png");
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.main-navigation__item__options {
+  background-color: #fff;
+  display: none;
+}
+
+.main-navigation__item__options a {
+  color: #000;
+}
+
+.main-navigation__item__title {
+  margin-right: 15px;
+}
+
+.main-navigation__item--options {
+  background-image: url("../img/chevron-down-nav.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.header__search {
+  background-image: url("../img/header-search.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 17px;
+  width: 21px;
+}
+
+.showcase {
+  background: url("../img/fan.jpg") no-repeat center center;
+  height: 770px;
+}
+
+.showcase__item {
+  width: 475px;
+  position: absolute;
+  right: 18%;
+  top: 19%;
+}
+
+.showcase__item span{
+  font-family: 'seguibl';
+  font-size: 69.44px;
+  line-height: 1;
+  padding-bottom: 45px;
+}
+
+.showcase__item p {
+  padding-bottom: 45px;
+}
+
+.showcase__item--invisible {
+  display: none;
+}
+
+.button {
+  color: #fff;
+  background-color: #e6362c;;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 2px;
+}
+
+.button--small {
+  font-size: 14px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  text-align: center;
+  padding-bottom: 80px;
+  border-bottom:  solid 1px #4d4d4d;
+}
+
+.features__item--quality {
+  background-image: url("../img/features-diamond.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 11px;
+  margin: 0 60px 0 60px
+
+}
+
+.features__item--warranty {
+  background-image: url("../img/features-warranty.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  margin: 8px 60px 0 60px
+}
+
+.features__item--support {
+  background-image: url("../img/features-support.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  margin: 0px 50px 0 50px
+
+}
+
+.features__item--materials {
+  background-image: url("../img/features-technology.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  margin: 0px 50px 0 50px
+}
+
+.features__item h3 {
+  padding-top: 33%;
+  padding-bottom: 30px;
+}
+
+.production {
+  padding-top: 80px;
+  text-align: center;
+  max-width: 945px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.production h2 {
+  font-weight: bold;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  text-align: center;
+}
+
+.products__item {
+  width: 320px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.products__item:after {
+  content: '';
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  transition: opacity 0.3s, background-size 0.3s;
+  background-size: 100%;
+}
+
+.products__item:hover:after {
+  opacity: 0.5;
+  background-size: 105%;
+}
+
+.products__item:before{
+  content: '';
+  background-image: url("../img/products-icon-electric.png");
+  background-repeat: no-repeat;
+  height: 64px;
+  width: 63px;
+  z-index: 2;
+  position: absolute;
+  top: 40px;
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.products__item:hover:before{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.products__item--electric:after {
+  background-image: url("../img/products-electro.jpg");
+}
+
+.products__item--water:after {
+  background-image: url("../img/products-water.jpg");
+}
+
+.products__item--air:after {
+  background-image: url("../img/products-air.jpg");
+}
+
+.products__item--chamber:after {
+  background-image: url("../img/products-electro.jpg");
+}
+
+.products__item .button{
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(150px);
+  transition: opacity 0.3s, transform 0.3s;
+  position: absolute;
+  top: 330px;
+}
+
+.products__item:hover .button {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.products__item p{
+  position: absolute;
+  top: 250px;
+  z-index: 2;
+  font-size: 14px;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.products__item:hover p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.products__item h3 {
+  z-index: 2;
+  transition: font-size 0.2s;
+}
+
+.products__item:hover h3 {
+  font-size: 19px;
+}
+
+.trust_partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 50px;
+}
+
+#footer {
+  background-color: #000;
+  color: #808080;
+}
+
+.footer_logo {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.footer-navigation ul {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 1rem;
+  padding: 0 15% 30px 15%;
+}
+
+.footer_social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer_item {
+  text-align: center;
+  padding-bottom: 60px;
+}
