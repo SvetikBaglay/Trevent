@@ -79,12 +79,14 @@ p {
 .header__phones {
   padding-left: 40px;
 }
+
 .phones {
   background-image: url("../img/header-phone.png");
   background-repeat: no-repeat;
   background-position: left;
   padding-left: 40px;
 }
+
 .phones__title {
   text-transform: uppercase;
   font-size: 12px;
@@ -97,8 +99,6 @@ p {
   display: block;
   background-image: url("../img/chevron-down.png");
   background-repeat: no-repeat;
-  background-position-x: 77%;
-  background-position-y: 60%;
 }
 
 .languages {
@@ -106,6 +106,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .languages a {
   padding-left: 30px;
 }
@@ -135,8 +136,8 @@ p {
 }
 
 .main-navigation {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   align-items: center;
   text-transform: uppercase;
   padding-right: 60px;
@@ -159,6 +160,8 @@ p {
   background-image: url("../img/chevron-down-nav.png");
   background-repeat: no-repeat;
   background-position: right;
+  background-position-x: 75%;
+  background-position-y: 10px
 }
 
 .header__search {
@@ -379,6 +382,11 @@ p {
 
 .products__item:hover h3 {
   font-size: 19px;
+}
+
+.trust div {
+  display: flex;
+  align-items: center;
 }
 
 .trust:before {
