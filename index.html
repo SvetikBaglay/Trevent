@@ -15,7 +15,7 @@
 <body>
   <div class="container">
     <header class="header">
-      <a href="#" class="header__logo"><img class="logo" src="img/logo.png" alt="Trevent"></a>
+      <a href="#header" class="header__logo"><img class="logo" src="img/logo.png" alt="Trevent"></a>
       <div class="header__phones">
         <div class="phones">
           <span class="phones__title">Графік роботи: 09:00-18:00</span>
@@ -35,9 +35,9 @@
       <div class="header__navigation">
         <nav class="main-navigation">
           <a href="#" class="main-navigation__item">Головна</a>
-          <a href="#" class="main-navigation__item">Компанія</a>
+          <a href="#company_nav" class="main-navigation__item">Компанія</a>
           <div href="#" class="main-navigation__item main-navigation__item--options">
-            <span class="main-navigation__item__title">Продукція</span>
+            <span class="main-navigation__item__title"><a href="#products_nav">Продукція</a></span>
             <div class="main-navigation__item__options">
               <a href="#">Документація</a>
               <a href="#">Поняття та відповіді</a>
@@ -45,14 +45,14 @@
             </div>
           </div>
           <div href="#" class="main-navigation__item main-navigation__item--options">
-            <span class="main-navigation__item__title">Підтрмка</span>
+            <span class="main-navigation__item__title"><a href="#support_nav">Підтрмка</a></span>
             <div class="main-navigation__item__options">
               <a href="#">Документація</a>
-              <a href="#">Поняття та відповіді</a>
+              <a href="#answer_nav">Питання та відповіді</a>
               <a href="#">Відео та мультимедія</a>
             </div>
           </div>
-          <a href="#" class="main-navigation__item">Контакти</a>
+          <a href="#contacts_nav" class="main-navigation__item">Контакти</a>
         </nav>
       </div>
       <a href="#" class="header__search"></a>
@@ -143,8 +143,7 @@
     </section>
     <section class="trust">
       <h2>Нам довІряють</h2>
-      <a class="trust__shevron trust__shevron--left" href="#"></a>
-      <a class="trust__shevron trust__shevron--right" href="#"></a>
+      <a class="trust__shevron" href="#"></a>
       <div class="trust__partners">
         <a href="#"><img src="img/trust-logo-remak.png" alt="remak"></a>
         <a href="#"><img src="img/trust-logo-reflex.png" alt="reflex"></a>
@@ -155,26 +154,24 @@
     <footer class="footer">
       <img class="footer__logo" src="img/logo-footer.png" alt="footer-logo">
       <div class="footer__navigation">
-        <ul>
-          <li>Компанія</li>
-          <li>Продукція</li>
-          <li>Решення</li>
-          <li>Підтрмка</li>
-          <li>Питання та відповіді</li>
-          <li>Контакти</li>
-        </ul>
+        <a id="company_nav" href="#">Компанія</a>
+        <a id="products_nav" href="#">Продукція</a>
+        <a id="solution_nav"href="#">Рішення</a>
+        <a id="support_nav" href="#">Підтримка</a>
+        <a id="answer_nav" href="">Питання та відповіді</a>
+        <a id="contacts_nav" href="">Контакти</a>
       </div>
       <div class="footer__social">
-        <a class="social__icon social__icon__fasebook" href="#"></a>
-        <a class="social__icon social__icon__youtube" href="#"></a>
+        <a class="footer__social__item footer__social__item--facebook" href="#"></a>
+        <a class="footer__social__item footer__social__item--youtube" href="#"></a>
       </div>
       <div class="footer__copyright">
-        <p>© TREVENT, 2019. Дизайн розробляли ONCA</p>
+        <p>© TREVENT, 2019.Дизайн розробляли ONCA</p>
       </div>
     </footer>
   </div>
   <div>
-    <a class="button_up" href="#header"></a>
+    <a id="header" class="button__up" href="#"></a>
   </div>
 </body>
 </html>
