@@ -48,7 +48,7 @@ p {
   height: 40px;
   width: 40px;
   position: fixed;
-  right: 175px;
+  right: 160px;
   bottom: 50px;
   border-radius: 2px;
   background-color: #e6362c;
@@ -61,6 +61,7 @@ p {
   margin: auto;
   max-width: 1426px;
   overflow: hidden;
+  position: relative;
 }
 
 .header {
@@ -75,6 +76,9 @@ p {
   width: 277px;
 }
 
+.header__phones {
+  padding-left: 40px;
+}
 .phones {
   background-image: url("../img/header-phone.png");
   background-repeat: no-repeat;
@@ -93,7 +97,7 @@ p {
   display: block;
   background-image: url("../img/chevron-down.png");
   background-repeat: no-repeat;
-  background-position-x: 65%;
+  background-position-x: 77%;
   background-position-y: 60%;
 }
 
@@ -132,9 +136,10 @@ p {
 
 .main-navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
+  padding-right: 60px;
 }
 
 .main-navigation__item__options {
@@ -167,6 +172,7 @@ p {
 .showcase {
   background: url("../img/fan.jpg") no-repeat center center;
   height: 770px;
+  position: relative;
 }
 
 .showcase__item {
@@ -206,59 +212,59 @@ p {
 
 .features {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, auto);
   grid-gap: 1rem;
   text-align: center;
-  padding-bottom: 80px;
+}
+
+.features:after {
   border-bottom:  solid 1px #4d4d4d;
+  width: 80%;;
+  position: absolute;
+  content: "";
+  left: 50%;
+  margin-left: -40%;
+  top: 17%;
+}
+
+.features__item {
+  background-repeat: no-repeat;
+  background-position: top;
+  margin: 0 50px 0 50px;
+  padding-top: 90px;
 }
 
 .features__item--quality {
   background-image: url("../img/features-diamond.png");
-  background-repeat: no-repeat;
-  background-position: top;
-  padding-top: 11px;
-  margin: 0 60px 0 60px
-
 }
 
 .features__item--warranty {
   background-image: url("../img/features-warranty.png");
-  background-repeat: no-repeat;
-  background-position: top;
-  margin: 8px 60px 0 60px
 }
 
 .features__item--support {
   background-image: url("../img/features-support.png");
-  background-repeat: no-repeat;
-  background-position: top;
-  margin: 0px 50px 0 50px
-
 }
 
 .features__item--materials {
   background-image: url("../img/features-technology.png");
-  background-repeat: no-repeat;
-  background-position: top;
-  margin: 0px 50px 0 50px
 }
 
 .features__item h3 {
-  padding-top: 33%;
   padding-bottom: 30px;
 }
 
 .production {
-  padding-top: 80px;
   text-align: center;
   max-width: 945px;
   margin: 0 auto;
   padding-bottom: 60px;
+  padding-top: 80px;
 }
 
 .production h2 {
   font-weight: bold;
+  padding-top: 80px
 }
 
 .products {
@@ -378,8 +384,9 @@ p {
 .trust:before {
   content: "";
   display: block;
-  border-bottom:  solid 1px #4d4d4d;
-  width: 1300px;
+  border-top:  solid 1px #4d4d4d;
+  width: 80%;
+  margin: auto;
 }
 
 .trust:after {
@@ -387,8 +394,10 @@ p {
   display: block;
   padding-bottom: 80px;
   border-bottom:  solid 1px #4d4d4d;
-  width: 1300px;
+  width: 80%;
+  margin: auto;
 }
+
 .trust h2 {
   font-weight: bold;
   padding: 80px 0 50px 0;
@@ -402,8 +411,10 @@ p {
   padding: 0 50px;
 }
 
-.trust__shevron:after {
+.trust__shevron__right:after {
   background-image: url("../img/trust-chevron-right.png");
+  background-repeat: no-repeat;
+  padding-right: 25px;
   width: 16px;
   height: 29px;
   content: "";
@@ -411,8 +422,10 @@ p {
   float: right;
 }
 
-.trust__shevron:before {
+.trust__shevron__left:before {
   background-image: url("../img/trust-chevron-left.png");
+  background-repeat: no-repeat;
+  margin-left: 25px;
   width: 16px;
   height: 29px;
   content: "";
