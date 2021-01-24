@@ -20,6 +20,7 @@
       <a href="#header" class="header__logo"><img class="logo" src="img/logo.png" alt="Trevent"></a>
       <div class="header__phones">
         <div class="phones">
+          <span class="phones__media">З 09:00-18:00</span>
           <span class="phones__title">Графік роботи: 09:00-18:00</span>
           <a class="phones__number" href="tel:098-86-900-25">(098) 86 900 25</a>
         </div>
@@ -32,30 +33,37 @@
             <a class="languages__selector__item languages__selector__item--pl" href="#">PL</a>
             <a class="languages__selector__item languages__selector__item--ru" href="#">RU</a>
           </div>
+          <img src="img/chevron-down-red.png" alt="#">
         </div>
       </div>
       <div class="header__navigation">
-        <nav class="main-navigation">
-          <a href="#" class="main-navigation__item">Головна</a>
-          <a href="#" class="main-navigation__item">Компанія</a>
-          <div href="#" class="main-navigation__item main-navigation__item--options">
-            <span class="main-navigation__item__title">Продукція</span>
-            <div class="main-navigation__item__options">
-              <a href="#">Документація</a>
-              <a href="#">Поняття та відповіді</a>
-              <a href="#">Відео та мультимедія</a>
+        <div class="header__gumburger">
+          <input id="menu__toggle" type="checkbox">
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <nav class="main-navigation">
+            <a href="#" class="main-navigation__item">Головна</a>
+            <a href="#" class="main-navigation__item">Компанія</a>
+            <div href="#" class="main-navigation__item main-navigation__item--options">
+              <span class="main-navigation__item__title">Продукція</span>
+              <div class="main-navigation__item__options">
+                <a href="#">Документація</a>
+                <a href="#">Поняття та відповіді</a>
+                <a href="#">Відео та мультимедія</a>
+              </div>
             </div>
-          </div>
-          <div href="#" class="main-navigation__item main-navigation__item--options">
-            <span class="main-navigation__item__title">Підтрмка</span>
-            <div class="main-navigation__item__options">
-              <a href="#">Документація</a>
-              <a href="#">Питання та відповіді</a>
-              <a href="#">Відео та мультимедія</a>
+            <div href="#" class="main-navigation__item main-navigation__item--options">
+              <span class="main-navigation__item__title">Підтрмка</span>
+              <div class="main-navigation__item__options">
+                <a href="#">Документація</a>
+                <a href="#">Питання та відповіді</a>
+                <a href="#">Відео та мультимедія</a>
+              </div>
             </div>
-          </div>
-          <a href="#contacts_nav" class="main-navigation__item">Контакти</a>
-        </nav>
+            <a href="#contacts_nav" class="main-navigation__item">Контакти</a>
+          </nav>
+        </div>
       </div>
       <a href="#" class="header__search"></a>
     </header>
@@ -145,15 +153,15 @@
     </section>
     <section class="trust">
       <h2>Нам довІряють</h2>
-      <div>
-        <a class="trust__shevron__left"href="#"></a>
-        <div class="trust__partners">
-          <a href="#"><img src="img/trust-logo-remak.png" alt="remak"></a>
-          <a href="#"><img src="img/trust-logo-reflex.png" alt="reflex"></a>
-          <a href="#"><img src="img/trust-logo-elektronik.png" alt="elektronik"></a>
-          <a href="#"><img src="img/trust-logo-kermi.png" alt="kermi"></a>
-        </div>
-        <a class="trust__shevron__right" href="#"></a>
+      <div class="trust__block">
+          <a class="trust__shevron__left"href="#"></a>
+          <div class="trust__partners">
+            <a href="#"><img src="img/trust-logo-remak.png" alt="remak"></a>
+            <a href="#"><img src="img/trust-logo-reflex.png" alt="reflex"></a>
+            <a href="#"><img src="img/trust-logo-elektronik.png" alt="elektronik"></a>
+            <a href="#"><img src="img/trust-logo-kermi.png" alt="kermi"></a>
+          </div>
+          <a class="trust__shevron__right" href="#"></a>
       </div>
     </section>
     <footer class="footer">

@@ -7,7 +7,6 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  line-height: 1.5;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #000;
@@ -43,6 +42,14 @@ p {
   line-height: 1.4;
 }
 
+.header__gumburger {
+  visibility: hidden;
+}
+
+#menu__toggle {
+  display: none;
+}
+
 .button__up {
   display: block;
   height: 40px;
@@ -66,18 +73,15 @@ p {
 
 .header {
   background-color: #000;
-  display: grid;
-  grid-template-columns: 2fr 2fr 1fr 6fr auto;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  margin: 30px 10px;
 }
 
 .logo {
   height: 60px;
   width: 277px;
-}
-
-.header__phones {
-  padding-left: 40px;
 }
 
 .phones {
@@ -94,17 +98,25 @@ p {
   color: #e6362c;
 }
 
+.phones__media {
+  display: none;
+}
+
 .phones__number  {
   font-weight: bold;
   display: block;
   background-image: url("../img/chevron-down.png");
   background-repeat: no-repeat;
+  background-position: center right;
 }
 
 .languages {
-  background-image: url("../img/chevron-down-red.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.languages img {
+  height: min-content;
 }
 
 .languages a {
@@ -136,11 +148,14 @@ p {
 }
 
 .main-navigation {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
   align-items: center;
   text-transform: uppercase;
-  padding-right: 60px;
+  visibility: visible;
+}
+
+.main-navigation__item {
+  padding: 0 15px;
 }
 
 .main-navigation__item__options {
@@ -152,16 +167,12 @@ p {
   color: #000;
 }
 
-.main-navigation__item__title {
-  margin-right: 15px;
-}
-
 .main-navigation__item--options {
   background-image: url("../img/chevron-down-nav.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-position-x: 75%;
-  background-position-y: 10px
+  background-position-y: 7px;
+  background-position-x: 98%;
 }
 
 .header__search {
@@ -179,7 +190,7 @@ p {
 }
 
 .showcase__item {
-  width: 475px;
+  max-width: 475px;
   position: absolute;
   right: 18%;
   top: 19%;
@@ -189,11 +200,10 @@ p {
   font-family: 'seguibl';
   font-size: 69px;
   line-height: 1;
-  padding-bottom: 45px;
 }
 
 .showcase__item p {
-  padding-bottom: 45px;
+  padding: 45px 0;
 }
 
 .showcase__item--invisible {
@@ -233,7 +243,6 @@ p {
 .features__item {
   background-repeat: no-repeat;
   background-position: top;
-  margin: 0 50px 0 50px;
   padding-top: 90px;
 }
 
@@ -271,8 +280,9 @@ p {
 }
 
 .products {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   grid-gap: 1rem;
   text-align: center;
   padding-bottom: 80px;
@@ -384,11 +394,6 @@ p {
   font-size: 19px;
 }
 
-.trust div {
-  display: flex;
-  align-items: center;
-}
-
 .trust:before {
   content: "";
   display: block;
@@ -412,11 +417,19 @@ p {
   text-align: center;
 }
 
+.trust__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .trust__partners {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  padding: 0 50px;
+}
+
+.trust__partners img {
+  padding: 0 25px;
 }
 
 .trust__shevron__right:after {
