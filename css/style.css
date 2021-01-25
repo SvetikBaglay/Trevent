@@ -469,26 +469,33 @@ p {
 }
 
 .trust__partners {
+  width: calc(100% - 32px);
+}
+
+.trust__partners__item {
+  width: 224px;
+  height: 100px;
+}
+
+.trust__partners__item span {
   display: flex;
+  width: 100%;
+  height: 100%;
   align-items: center;
+  justify-content: center;
 }
 
-.trust__partners a {
-  display: block;
-}
-
-.trust__shevron__right {
+.trust__shevron--right,
+.trust__shevron--left {
   background-image: url("../img/trust-chevron-right.png");
   background-repeat: no-repeat;
   width: 16px;
   height: 29px;
+  display: block;
 }
 
-.trust__shevron__left {
+.trust__shevron--left {
   background-image: url("../img/trust-chevron-left.png");
-  background-repeat: no-repeat;
-  width: 16px;
-  height: 29px;
 }
 
 .footer{

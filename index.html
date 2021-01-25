@@ -4,17 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/normalize/normalize.css">
+  <link rel="stylesheet" href="js/slick/slick.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="fonts/segoeui/stylesheet.css">
-  <link rel="stylesheet" href="fonts/seguibl/font.css">
-  <link rel="stylesheet" href="fonts/clearsans/clearsans.css">
   <link rel="stylesheet" media="screen and (max-width: 500px)" href="css/media.css">
   <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/media.css">
   <link rel="stylesheet" media="screen and (max-width: 991px)" href="css/media.css">
-  <link rel="stylesheet" href="normalize/normalize.css">
+
+  <link rel="stylesheet" href="fonts/segoeui/stylesheet.css">
+  <link rel="stylesheet" href="fonts/seguibl/font.css">
+  <link rel="stylesheet" href="fonts/clearsans/clearsans.css">
+
   <title>Trevent</title>
-  <script type="text/javascript" scr="js/jquery.js"></script>
-  <script type="text/javascript" scr="js/script.js"></script>
 </head>
 <body>
   <div class="container">
@@ -154,14 +156,25 @@
     <section class="trust">
       <h2>Нам довІряють</h2>
       <div class="trust__block">
-          <a class="trust__shevron__left"href="#"></a>
+          <a class="trust__shevron--left" href="#"></a>
           <div class="trust__partners">
-            <a href="#"><img src="img/trust-logo-remak.png" alt="remak"></a>
-            <a href="#"><img src="img/trust-logo-reflex.png" alt="reflex"></a>
-            <a href="#"><img src="img/trust-logo-elektronik.png" alt="elektronik"></a>
-            <a href="#"><img src="img/trust-logo-kermi.png" alt="kermi"></a>
+            <a href="#" class="trust__partners__item">
+              <span><img src="img/trust-logo-remak.png" alt="remak"></span>
+            </a>
+            <a href="#" class="trust__partners__item">
+              <span><img src="img/trust-logo-reflex.png" alt="reflex"></span
+            </a>
+            <a href="#" class="trust__partners__item">
+              <span><img src="img/trust-logo-elektronik.png" alt="elektronik"></span>
+            </a>
+            <a href="#" class="trust__partners__item"><span><img src="img/trust-logo-kermi.png" alt="kermi"></span></a>
+
+            <a href="#" class="trust__partners__item"><span><img src="img/trust-logo-remak.png" alt="remak"></span></a>
+            <a href="#" class="trust__partners__item"><span><img src="img/trust-logo-reflex.png" alt="reflex"></span></a>
+            <a href="#" class="trust__partners__item"><span><img src="img/trust-logo-elektronik.png" alt="elektronik"></span></a>
+            <a href="#" class="trust__partners__item"><span><img src="img/trust-logo-kermi.png" alt="kermi"></span></a>
           </div>
-          <a class="trust__shevron__right" href="#"></a>
+          <a class="trust__shevron--right" href="#"></a>
       </div>
     </section>
     <footer class="footer">
@@ -186,5 +199,8 @@
   <div>
     <a id="header" class="button__up" href="#"></a>
   </div>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

@@ -17,12 +17,6 @@
     top: 14%;
   }
 
-  .trust__partners img{
-    width: 70%;
-    height: 70%;
-    padding: 0;
-  }
-
   .footer__navigation {
     padding: 0 19% 30px 20%;
   }
@@ -60,10 +54,6 @@
 
   .showcase__item {
     right: 5%;
-  }
-
-  .trust__partners img {
-    width: 100%;
   }
 
   .footer__navigation {
@@ -235,12 +225,6 @@
     top: 15%;
   }
 
-  .trust__partners img{
-    width: 80%;
-    height: 80%;
-    padding: 0 10px;
-  }
-
   .footer__navigation {
     grid-template-columns: repeat(3, auto);
     grid-gap: 2rem;
@@ -263,7 +247,7 @@
   .logo {
     margin: 0;
   }
-  
+
   .header {
     margin: 0;
     flex-wrap: wrap;
@@ -417,24 +401,8 @@
     font-size: 22px;
   }
 
-  .trust__block .trust__partners img {
-    width: 80%;
-  }
-
   .trust__partners {
     padding: 0 6px;
-  }
-
-  .trust__partners img {
-    padding: 0;
-  }
-
-  .trust__shevron__left {
-    display: none;
-  }
-
-  .trust__shevron__right {
-    display: none;
   }
 
   .trust::after {
