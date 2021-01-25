@@ -1,4 +1,10 @@
 $(document).ready(function(){
+  $('.showcase').slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 1,
+  })
+
   $('.trust__partners').slick({
     arrows: true,
     appendArrows: false,
