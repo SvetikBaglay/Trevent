@@ -80,6 +80,7 @@ p {
 }
 
 .logo {
+  margin-right: 10px;
   height: 60px;
   width: 277px;
 }
@@ -89,6 +90,9 @@ p {
   background-repeat: no-repeat;
   background-position: left;
   padding-left: 40px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
 }
 
 .phones__title {
@@ -104,15 +108,23 @@ p {
 
 .phones__number  {
   font-weight: bold;
-  display: block;
   background-image: url("../img/chevron-down.png");
   background-repeat: no-repeat;
   background-position: center right;
 }
 
+.phones__number a {
+  position: relative;
+}
+
 .languages {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
+  background-image: url("../img/chevron-down-red.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  padding-left: 5px;
 }
 
 .languages img {
@@ -120,7 +132,7 @@ p {
 }
 
 .languages a {
-  padding-left: 30px;
+  padding: 0 15px 0 30px;
 }
 
 .languages__current--ua {
@@ -149,13 +161,14 @@ p {
 
 .main-navigation {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   text-transform: uppercase;
   visibility: visible;
 }
 
 .main-navigation__item {
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .main-navigation__item__options {
@@ -170,17 +183,15 @@ p {
 .main-navigation__item--options {
   background-image: url("../img/chevron-down-nav.png");
   background-repeat: no-repeat;
-  background-position: right;
-  background-position-y: 7px;
-  background-position-x: 98%;
+  background-position: right center;
 }
 
 .header__search {
   background-image: url("../img/header-search.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right center;
   height: 17px;
-  width: 21px;
+  width: 25px;
 }
 
 .showcase {
@@ -269,7 +280,7 @@ p {
 .production {
   text-align: center;
   max-width: 945px;
-  margin: 0 auto;
+  margin: 0 10px;
   padding-bottom: 60px;
   padding-top: 80px;
 }
@@ -439,7 +450,6 @@ p {
   width: 16px;
   height: 29px;
   content: "";
-  display: block;
   float: right;
 }
 
@@ -450,7 +460,6 @@ p {
   width: 16px;
   height: 29px;
   content: "";
-  display: block;
   float: left;
 }
 
