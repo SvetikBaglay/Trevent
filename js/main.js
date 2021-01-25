@@ -1,4 +1,12 @@
 $(document).ready(function(){
+  $('.main-navigation__item--options').mouseover(function(){
+    $(this).addClass('main-navigation__item--options-visible');
+  });
+
+  $('.main-navigation__item--options').mouseout(function(){
+    $(this).removeClass('main-navigation__item--options-visible');
+  });
+
   $('.showcase').slick({
     arrows: false,
     dots: true,
