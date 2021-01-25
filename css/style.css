@@ -28,6 +28,7 @@ h2 {
   font-size: 36px;
   letter-spacing: 5px;
   font-weight: normal;
+  line-height: 1;
 }
 
 h3 {
@@ -66,17 +67,19 @@ p {
 
 .container {
   margin: auto;
-  max-width: 1426px;
+  max-width: 1430px;
   overflow: hidden;
   position: relative;
 }
 
 .header {
-  background-color: #000;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 30px 10px;
+}
+
+.header__logo {
+  margin-right: 52px;
 }
 
 .logo {
@@ -85,11 +88,15 @@ p {
   width: 277px;
 }
 
+.header__phones {
+  margin-right: 78px;
+}
+
 .phones {
   background-image: url("../img/header-phone.png");
   background-repeat: no-repeat;
   background-position: left;
-  padding-left: 40px;
+  padding-left: 45px;
   white-space: nowrap;
   display: flex;
   flex-direction: column;
@@ -98,16 +105,16 @@ p {
 .phones__title {
   text-transform: uppercase;
   font-size: 12px;
+  line-height: 1.5;
+  margin-top: -14px;
   font-weight: normal;
   color: #e6362c;
 }
 
-.phones__media {
-  display: none;
-}
-
 .phones__number  {
   font-weight: bold;
+  font-size: 22px;
+  line-height: 0.7;
   background-image: url("../img/chevron-down.png");
   background-repeat: no-repeat;
   background-position: center right;
@@ -115,6 +122,10 @@ p {
 
 .phones__number a {
   position: relative;
+}
+
+.header__languages {
+  margin-right: 29px;
 }
 
 .languages {
@@ -161,14 +172,16 @@ p {
 
 .main-navigation {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   text-transform: uppercase;
+  font-size: 18px;
   visibility: visible;
+  margin-bottom: 4px;
 }
 
 .main-navigation__item {
-  padding: 0 10px;
+  margin: 0 23px 0 11px;
+  position: relative;
 }
 
 .main-navigation__item__options {
@@ -181,17 +194,30 @@ p {
 }
 
 .main-navigation__item--options {
+  background-position: center;
+  margin-right: 43px
+}
+
+.main-navigation__item--options:after {
+  content: '';
+  display: block;
   background-image: url("../img/chevron-down-nav.png");
   background-repeat: no-repeat;
-  background-position: right center;
+  height: 7px;
+  width: 10px;
+  position: absolute;
+  top: 8px;
+  left: 100%;
+  margin-left: 9px
 }
 
 .header__search {
   background-image: url("../img/header-search.png");
   background-repeat: no-repeat;
-  background-position: right center;
-  height: 17px;
-  width: 25px;
+  height: 20px;
+  width: 42px;
+  position: absolute;
+  right: -22px;
 }
 
 .showcase {
@@ -201,20 +227,24 @@ p {
 }
 
 .showcase__item {
-  max-width: 475px;
+  max-width: 480px;
   position: absolute;
-  right: 18%;
-  top: 19%;
+  right: 19%;
+  top: 27%;
+  padding-left: 6px
 }
 
 .showcase__item span{
   font-family: 'seguibl';
-  font-size: 69px;
-  line-height: 1;
+  font-size: 64px;
+  line-height: 1.2;
+  letter-spacing: 5px;
 }
 
 .showcase__item p {
-  padding: 45px 0;
+  padding-top: 22px;
+  padding-bottom: 50px;
+  line-height: 1.6;
 }
 
 .showcase__item--invisible {
@@ -223,11 +253,13 @@ p {
 
 .button {
   color: #fff;
-  background-color: #e6362c;;
+  background-color: #e6362c;
   text-transform: uppercase;
-  font-size: 18px;
-  padding: 10px 20px;
+  font-size: 17px;
+  padding: 9px 31px;
   border-radius: 2px;
+  margin-left: 5px;
+  letter-spacing: 1px;
 }
 
 .button--small {
@@ -239,22 +271,24 @@ p {
   grid-template-columns: repeat(4, auto);
   grid-gap: 1rem;
   text-align: center;
+  padding: 76px 88px;
 }
 
 .features:after {
   border-bottom:  solid 1px #4d4d4d;
-  width: 80%;;
+  width: 90%;;
   position: absolute;
   content: "";
-  left: 50%;
+  left: 46%;
   margin-left: -40%;
-  top: 17%;
+  top: 19%;
 }
 
 .features__item {
   background-repeat: no-repeat;
   background-position: top;
   padding-top: 90px;
+  margin: 0 30px;
 }
 
 .features__item--quality {
@@ -274,29 +308,29 @@ p {
 }
 
 .features__item h3 {
-  padding-bottom: 30px;
+  padding-bottom: 12px;
 }
 
 .production {
   text-align: center;
   max-width: 945px;
-  margin: 0 10px;
+  margin: 0 auto;
   padding-bottom: 60px;
   padding-top: 80px;
 }
 
 .production h2 {
   font-weight: bold;
-  padding-top: 80px
+  padding-bottom: 48px;
 }
 
 .products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   grid-gap: 1rem;
   text-align: center;
-  padding-bottom: 80px;
+  padding-bottom: 74px;
 }
 
 .products__item {
@@ -439,28 +473,22 @@ p {
   align-items: center;
 }
 
-.trust__partners img {
-  padding: 0 25px;
+.trust__partners a {
+  display: block;
 }
 
-.trust__shevron__right:after {
+.trust__shevron__right {
   background-image: url("../img/trust-chevron-right.png");
   background-repeat: no-repeat;
-  padding-right: 25px;
   width: 16px;
   height: 29px;
-  content: "";
-  float: right;
 }
 
-.trust__shevron__left:before {
+.trust__shevron__left {
   background-image: url("../img/trust-chevron-left.png");
   background-repeat: no-repeat;
-  margin-left: 25px;
   width: 16px;
   height: 29px;
-  content: "";
-  float: left;
 }
 
 .footer{

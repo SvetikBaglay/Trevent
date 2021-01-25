@@ -37,6 +37,7 @@
     justify-content: space-around;
     margin: 10px;
   }
+
   .header__phones {
     margin: 0 10px;
   }
@@ -262,6 +263,7 @@
   .logo {
     margin: 0;
   }
+  
   .header {
     margin: 0;
     flex-wrap: wrap;
